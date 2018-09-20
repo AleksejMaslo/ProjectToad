@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0
+}
+
+#header {
+    position: relative
+}
+
+#wrapper {
+    float: left;
+    width: 100%
+}
+
+#content {
+    margin: 0 25%
+}
+
+#navigation {
+    float: left;
+    width: 25%;
+    margin-left: -100%;
+    background: #B9CAFF
+}
+
+#extra {
+    float: left;
+    width: 25%;
+    margin-left: -25%;
+    background: #FF8539
+}
+
+#footer {
+    clear: left;
+    width: 100%;
+    background: #333;
+    color: #FFF
+}
