@@ -8,7 +8,7 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background: #d3d3d3;
+    background: #ffffff;
     min-width: 320px;
 }
 
@@ -17,79 +17,35 @@ body {
     position: relative;
 }
 
-* {
-    line-height: 2rem;
-    background-size: 100% auto;
-}
-
 div {
     display: block;
 }
 
-/* NAV HEADER? !!!!!
-
-
-.header {
-    background-color: #414895;
-    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.25);
-    height: 48px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-size: auto;
-    position: relative;
-    z-index: 500;
-
-}
-
-header .page-width {
-    height: 98px;
-    -webkit-transition: height .25s ease-in-out;
-    -o-transition: height .25s ease-in-out;
-    transition: height .25s ease-in-out;
-    z-index: 500;
-}
-
-.page-width {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 0px;
-    position: relative;
-}
-
-header .home {
-    text-indent: -999px;
-    width: 221px;
-    height: 74px;
-    margin-top: -37px;
+* {
+    line-height: 2rem;
+    background-size: 100% auto;
+    text-size-adjust: none;
+    box-sizing: inherit;
     outline: 0;
-    background: url(../Resources/D&D-Logo.png) 0 0 no-repeat;
-    background-size: 200% auto;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    overflow: hidden;
-    transition-property: width, height, left, margin-top, margin-left;
-    transition-duration: .25s;
-    transition-timing-function: ease-in-out;
-}*/
+}
 
 /* HEADER BEGINNING*/
 
-header {
+header { /* Header background*/
+    background: url(../Resources/header_background.jpg) 50% 0 no-repeat;
+    background-size: auto;
+    position: relative;
+    z-index: 500;
+    box-shadow: 10px 10px 25px #000000;
+}
+
+article, figcaption, figure, footer, header, nav, form {
     margin: 0;
     padding: 0;
     display: block;
 }
 
-header {
-    background: url(../Resources/header_image.jpg) 100% no-repeat;
-    background-size: 100%;
-    position: relative;
-    z-index: 500;
-}
-
-header .page-width {
+header .page-width { /* Header height*/
     height: 98px;
     transition: height .25s ease-in-out;
     z-index: 500;
@@ -102,24 +58,6 @@ header .page-width {
     position: relative;
 }
 
-/* HEAD LOGO*/
-header .home {
-    text-indent: -999px;
-    width: 221px;
-    height: 74px;
-    margin-top: -37px;
-    outline: 0;
-    background: url(../Resources/D&D-Logo.png) 100% no-repeat;
-    background-size: 200% auto;
-    position: absolute;
-    top: 50%;
-    transition-property: width, height, left, margin-top, margin-left;
-    transition-duration: .25s;
-    transition-timing-function: ease-in-out;
-}
-/* HEAD LOGO*/
-
-/* HEAD NAV MENU*/
 #menu {
     font-weight: 700;
     text-transform: uppercase;
@@ -127,10 +65,6 @@ header .home {
     bottom: 0;
     left: 330px;
     height: 50px;
-    -webkit-transition: left .25s ease-in-out;
-    -moz-transition: left .25s ease-in-out;
-    -ms-transition: left .25s ease-in-out;
-    -o-transition: left .25s ease-in-out;
     transition: left .25s ease-in-out;
 }
 
@@ -139,6 +73,28 @@ header .home {
     height: 0;
     position: relative;
     overflow: hidden;
+}
+
+p, ul, ol, dt, dd, li, a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin: 0 0 1.6rem;
+    padding: 0;
+}
+
+#menu #menu-button {
+    background-size: auto;
+    width: 76px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -76px;
+    opacity: 0;
+    transform: translateX(-76px);
+    transition-property: transform, opacity;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
 }
 
 #menu ul {
@@ -150,24 +106,33 @@ header .home {
 header #menu ul li.expanded {
     list-style: none;
 }
+
 header #menu li.expanded, li.collapsed, li.leaf {
     margin: auto;
     padding: 0;
 }
+
 #menu li {
     text-align: center;
     float: left;
     position: relative;
 }
-@media (max-width: 1919px) {
-    #menu li, #menu li .panel {
-        width: 132px;
-    }
+
+#menu li {
+    text-align: center;
+    float: left;
+    position: relative;
 }
+
+#menu li .accordion-icon {
+    display: none;
+}
+
 #menu li:hover a, #menu li:focus a, #menu li.current a {
     color: #fff;
     background: #9d0a0e;
 }
+
 #menu a {
     font-size: 1.4rem;
     height: 35px;
@@ -194,25 +159,151 @@ header #menu li.expanded, li.collapsed, li.leaf {
     transition-duration: .25s;
     transition-timing-function: ease-in-out;
 }
-@media (max-width: 1919px) {
-    #menu li, #menu li .panel {
-        width: 132px;
-    }
+
+/* HEAD LOGO*/
+
+/* HEAD LOGO*/
+
+/* HEAD NAV MENU*/
+
+/* SIDEBAR */
+
+/* MAIN CONTENT */
+article.intro {
+    display: block;
+    padding: 0px 0px 25px;
 }
 
-header #menu ul li.expanded {
-    list-style: none;
+article h2.with-social {
+    width: 60%;
 }
-header #menu li.expanded, li.collapsed, li.leaf {
-    margin: auto;
+
+article h2 {
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 4.6rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+p.with-social {
+    font-size: 1.6rem;
+    margin: 0 0 1.6rem;
     padding: 0;
 }
-#menu li li {
-    float: none;
-    position: relative;
+
+/* BOX NEWS BEGGINING*/
+
+.promo-box .product.box {
+    margin: 2% auto 20px; /* Отступ каждой новости */
+    position: relative; /* Позиция текста */
+    overflow: hidden;
+    box-shadow: 10px 10px 25px #000000; /* Тень */
+    border-radius: 10px; /* Округление углов */
 }
 
-/* image */
+.promo-box .product .content {
+    position: absolute;
+    top: 20%;
+    left: 70px;
+    right: 50%;
+    height: auto;
+    width: auto;
+    cursor: default;
+}
+
+.promo-box .product img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: default;
+}
+
+.promo-box .product .content h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.promo-box .product .content p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #FFF;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.promo-box .product .content h2 span.first-line {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    color: #959595;
+    display: table;
+}
+
+.promo-box .product .content h2 span {
+    background-color: rgba(20, 12, 10, .7);
+    padding: 0 2px;
+    text-transform: uppercase;
+    line-height: 4.1rem;
+    color: #fff;
+}
+
+.cta-button {
+    margin-left: 33px;
+    padding: .2em 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+}
+
+.cta-button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #140c0a 50% 50% no-repeat;
+    background-size: auto;
+    transition-property: box-shadow, background-color;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+/* BOX NEWS END*/
+
+/* SEE ALL BUTTON START */
+
+.region .see-all-container {
+    margin: 20px auto 40px;
+}
+
+.region .see-all-container .button {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "Roboto Condensed", Roboto, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background: #BC0F0F;
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    box-shadow: none;
+    border: 0;
+    transition: 100ms linear all;
+    text-transform: uppercase;
+    text-shadow: none;
+    max-width: 225px;
+}
+
+/* SEE ALL BUTTON END */
 
 #page-container {
     background-position: 50% 0;
@@ -221,25 +312,15 @@ header #menu li.expanded, li.collapsed, li.leaf {
     z-index: 1;
 }
 
-#page-header {
-    color: #fff;
-    background-size: 100% auto;
-    background: 50% 0 no-repeat;
-    position: relative;
-    max-height: 600px;
-    overflow: hidden;
-}
+/* Background image START*/
 
-#page-header img {
-    display: block;
-    width: 100%;
-}
-
-@media (max-width: 1220px) {
-    #page-header .page-width {
-        margin-left: 0;
-        left: 10px;
-    }
+#page-header .page-width {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -600px;
+    width: 620px;
+    z-index: 10;
 }
 
 #page-header .intro {
@@ -272,15 +353,6 @@ header #menu li.expanded, li.collapsed, li.leaf {
     box-shadow: 6px 0 0 rgba(20, 12, 10, .7), -6px 0 0 rgba(20, 12, 10, .7);
 }
 
-#page-header h1:after {
-    content: "";
-    height: 0;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
-}
-
 #page-header .text {
     text-shadow: 1px 1px 2px #000;
     margin: 1rem 0 0rem;
@@ -290,24 +362,6 @@ header #menu li.expanded, li.collapsed, li.leaf {
     font-size: 1.6rem;
     margin: 0 0 1.6rem;
     padding: 0;
-}
-
-#page-header .page-width:after {
-    content: "";
-    height: 0;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
-}
-header:after {
-    content: "";
-    height: 8px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 100%);
-    position: absolute;
-    right: 0;
-    bottom: -8px;
-    left: 0;
 }
 
 /* ПРОБА ПРИМЕРА!!!!!*/
@@ -391,7 +445,7 @@ li a:hover:not(.active) {
     border-radius: 1.5rem;
 }
 
-.cards__item {
+.cards_item {
     padding: 1rem;
 }
 
@@ -403,7 +457,7 @@ li a:hover:not(.active) {
     box-shadow: 10px 10px 5px #424242;
 }
 
-.card__content {
+.card_content {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -416,7 +470,7 @@ li a:hover:not(.active) {
     border-radius: 0.25rem;
 }
 
-.card__title {
+.card_title {
     color: #111111;
     font-size: 1.25rem;
     font-weight: 300;
@@ -424,11 +478,15 @@ li a:hover:not(.active) {
     text-transform: uppercase;
 }
 
-.card__text {
+.card_text {
     flex: 1 1 auto;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
+}
+
+.region-footer {
+    background-color: #333333;
 }
 
 footer {
@@ -463,11 +521,6 @@ footer #back-to-top a {
     cursor: pointer;
 }
 
-a {
-    color: #9d0a0e;
-    text-decoration: none;
-}
-
 footer .main-footer {
     font-weight: 600;
     text-align: left;
@@ -487,7 +540,7 @@ footer .main-footer:before {
 
 footer .main-footer .text {
     margin: 0 230px 0 280px;
-    color: #A7A7A7;
+    color: #ffffff;
 }
 
 footer .main-footer .text p.brand-family-title {
@@ -499,15 +552,6 @@ footer .main-footer .text p.brand-family-title {
 
 * > footer .main-footer .text p {
     display: block;
-}
-
-footer .main-footer .text p:after {
-    content: "";
-    height: 0;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
 }
 
 footer .main-footer .text p.brand-family-menu {
@@ -522,21 +566,12 @@ footer .main-footer .text p.brand-family-menu {
 }
 
 footer .main-footer .text a {
-    color: #A7A7A7;
+    color: #ffffff;
     text-decoration: none;
 }
 
 footer .main-footer .text p.brand-family-menu span.separator {
     margin: 0 4px;
-}
-
-footer .main-footer .text p:after {
-    content: "";
-    height: 0;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
 }
 
 footer .main-footer .text p.terms {
@@ -562,11 +597,6 @@ footer .main-footer .logo a {
     background-repeat: no-repeat;
     display: block;
     overflow: hidden;
-}
-
-a {
-    color: #9d0a0e;
-    text-decoration: none;
 }
 
 footer .main-footer .privacy {

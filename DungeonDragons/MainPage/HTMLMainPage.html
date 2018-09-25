@@ -10,52 +10,250 @@
 <div id="viewport">
     <div id="viewport-content">
         <div id="page" class="page">
-            <!-- Header -->
-            <!-- MY NAV PANEL
-        </div>
-        <nav class="main" role="banner">
-            <div class="main_nav" role="navigation">
-                <ul class="nav_panel">
-                    <li class="dropdown"><a href="" onclick="">My Content</a>
-                        <ul id="dropdown-content" class="dropdown-content">
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Races</a></li>
-                            <li><a href="">Classes</a></li>
-                            <li><a href="">Campaigns</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="" onclick="">Characters</a></li>
-                    <li><a href="" onclick="">Spells</a></li>
-                    <li><a href="" onclick="">Items</a></li>
-                    <li><a href="" onclick="">Monsters</a></li>
-                    <li><a href="" onclick="">Archive</a></li>
-                </ul>
-                <input placeholder="Search for anything" type="text" id="edit-keys" name="keys" value="" size="60"
-                       maxlength="128" class="form-text">
-            </div>
-        </nav>-->
+            <!-- HEADER-->
             <div class="region region-header">
                 <div id="block-dx1-common-blocks-block-dx1-common-blocks-header" class="block block-dx1-common-blocks">
                     <div class="content">
                         <header>
                             <div class="page-width">
-                                <a href="/" class="home">Dungeons &amp; Dragons</a>
+                                <a href="/" id="logo" class="home"></a>
                                 <nav id="menu">
-                                    <p class="menu-bar">Menu</p>
+                                    <p class="menu-bar"><span id="menu-button"></span><span class="label">Menu</span>
+                                    </p>
                                     <ul>
-                                        <li id="mn_new-to-dd" class="has-children expanded current">
-                                            <a href="">New to D&amp;D</a>
+                                        <li id="mn_new-to-dd" class="has-children expanded current"><span
+                                                class="accordion-icon"><span></span></span>
+                                            <a href="/dungeons-and-dragons">My Content</a>
                                             <ul class="panel">
                                                 <li id="mn_-dungeons-and-dragons-what-is-dd"
-                                                    class="has-children expanded current"><a
-                                                        href="">What is D&amp;D?</a>
+                                                    class="has-children expanded current"><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/dungeons-and-dragons/what-is-dd">What is D&amp;D?</a>
+                                                    <ul>
+                                                        <li id="mn_-dungeons-and-dragons-what-is-dd" class=" current"><a
+                                                                href="/dungeons-and-dragons/what-is-dd">Overview</a>
+                                                        </li>
+                                                        <li id="mn_-dungeons-and-dragons-what-is-dd-races"><a
+                                                                href="/dungeons-and-dragons/what-is-dd/races">Races</a>
+                                                        </li>
+                                                        <li id="mn_-dungeons-and-dragons-what-is-dd-classes"><a
+                                                                href="/dungeons-and-dragons/what-is-dd/classes">Classes</a>
+                                                        </li>
+                                                        <li id="mn_-dungeons-and-dragons-what-is-dd-monsters"><a
+                                                                href="/dungeons-and-dragons/what-is-dd/monsters">Monsters</a>
+                                                        </li>
+                                                        <li id="mn_-dungeons-and-dragons-story-factions"><a
+                                                                href="/dungeons-and-dragons/story/factions">Factions</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li id="mn_-dungeons-and-dragons-start-playing" class="has-children  ">
                                                     <span class="accordion-icon"><span></span></span><a
-                                                        href="">Start Playing</a>
+                                                        href="/dungeons-and-dragons/start-playing">Start Playing</a>
+                                                    <ul>
+                                                        <li id="mn_-products-catalog-digital-games"><a
+                                                                href="/products/catalog/digital-games">Digital Games</a>
+                                                        </li>
+                                                        <li id="mn_-products-legendary-fantasy-gaming"><a
+                                                                href="/products/legendary-fantasy-gaming">Tabletop
+                                                            Games</a></li>
+                                                    </ul>
                                                 </li>
                                                 <li id="mn_-community" class="has-children  "><span
                                                         class="accordion-icon"><span></span></span><a href="/community">Community</a>
+                                                    <ul>
+                                                        <li id="mn_https-www-facebook-com-dungeonsanddragons"><a
+                                                                href="https://www.facebook.com/dungeonsanddragons"
+                                                                target="_blank">Facebook</a></li>
+                                                        <li id="mn_https-twitter-com-izards-n-"><a
+                                                                href="https://twitter.com/Wizards_DnD" target="_blank">Twitter</a>
+                                                        </li>
+                                                        <li id="mn_http-dndwizards-tumblr-com"><a
+                                                                href="http://dndwizards.tumblr.com" target="_blank">Tumblr</a>
+                                                        </li>
+                                                        <li id="mn_https-www-youtube-com-user-izards"><a
+                                                                href="https://www.youtube.com/user/DNDWizards"
+                                                                target="_blank">YouTube</a></li>
+                                                        <li id="mn_https-www-twitch-tv-dnd"><a
+                                                                href="https://www.twitch.tv/dnd"
+                                                                target="_blank">Twitch</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="mn_product" class="has-children  "><span
+                                                class="accordion-icon"><span></span></span><a
+                                                href="/story/tombofannihilation">Characters</a>
+                                            <ul class="panel">
+                                                <li id="mn_-story-waterdeep" class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/story/waterdeep">Current Story</a>
+                                                    <ul>
+                                                        <li id="mn_-story-waterdeep"><a href="/story/waterdeep">Waterdeep</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-dungeons-and-dragons-story-curse-of-strahd"
+                                                    class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/dungeons-and-dragons/story/curse-of-strahd">Archive</a>
+                                                    <ul>
+                                                        <li id="mn_-story-tombofannihilation"><a
+                                                                href="/story/tombofannihilation">Tomb of
+                                                            Annihilation</a></li>
+                                                        <li id="mn_-dungeons-and-dragons-story-curse-of-strahd"><a
+                                                                href="/dungeons-and-dragons/story/curse-of-strahd">Curse
+                                                            of Strahd</a></li>
+                                                        <li id="mn_-dungeons-and-dragons-story-storm-kings-thunder"><a
+                                                                href="/dungeons-and-dragons/story/storm-kings-thunder">Storm
+                                                            King's Thunder</a></li>
+                                                        <li id="mn_-dungeons-and-dragons-story-rage-of-demons"><a
+                                                                href="/dungeons-and-dragons/story/rage-of-demons">Rage
+                                                            of Demons</a></li>
+                                                        <li id="mn_-products-elemental-evil"><a
+                                                                href="/products/elemental-evil">Elemental Evil </a></li>
+                                                        <li id="mn_-dungeons-and-dragons-story-tyrannyofdragons"><a
+                                                                href="/dungeons-and-dragons/story/tyrannyofdragons">Tyranny
+                                                            of Dragons</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-lore" class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/lore">Lore</a>
+                                                    <ul>
+                                                        <li id="mn_-dungeons-and-dragons-story-heroes"><a
+                                                                href="/dungeons-and-dragons/story/heroes">Heroes</a>
+                                                        </li>
+                                                        <li id="mn_-dungeons-and-dragons-story-curse-of-strahd-villains">
+                                                            <a href="/dungeons-and-dragons/story/curse-of-strahd/villains">Villains</a>
+                                                        </li>
+                                                        <li id="mn_-dungeons-and-dragons-what-is-dd-forgotten-realms"><a
+                                                                href="/dungeons-and-dragons/what-is-dd/forgotten-realms">Locations</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="mn_play-events" class="has-children  "><span
+                                                class="accordion-icon"><span></span></span><a href="/products/catalog">Spells</a>
+                                            <ul class="panel">
+                                                <li id="mn_-products-catalog"><a href="/products/catalog">All
+                                                    Products</a></li>
+                                                <li id="mn_-products-catalog-digital-games" class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/products/catalog/digital-games">Digital Games</a>
+                                                    <ul>
+                                                        <li id="mn_-products-digital-games-pcmac"><a
+                                                                href="/products/digital-games/pcmac">PC/Mac</a></li>
+                                                        <li id="mn_-products-digital-games-console"><a
+                                                                href="/products/digital-games/console">Console Games</a>
+                                                        </li>
+                                                        <li id="mn_-products-digital-games-mobiletablet"><a
+                                                                href="/products/digital-games/mobiletablet">Mobile and
+                                                            Tablet</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-products-catalog-tabletop-games" class="has-children  ">
+                                                    <span class="accordion-icon"><span></span></span><a
+                                                        href="/products/catalog/tabletop-games">Tabletop Games</a>
+                                                    <ul>
+                                                        <li id="mn_-products-tabletop-games-rpg-products"><a
+                                                                href="/products/tabletop-games/rpg-products">Tabletop
+                                                            RPGs</a></li>
+                                                        <li id="mn_-products-tabletop-games-miniatures"><a
+                                                                href="/products/tabletop-games/miniatures">Miniatures</a>
+                                                        </li>
+                                                        <li id="mn_-products-tabletop-games-board-card-games"><a
+                                                                href="/products/tabletop-games/board-card-games">Board
+                                                            &amp; Card Games</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-products-fiction-novels" class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/products/fiction/novels">Fiction</a>
+                                                    <ul>
+                                                        <li id="mn_-products-fiction-novels"><a
+                                                                href="/products/fiction/novels">Novels</a></li>
+                                                        <li id="mn_-products-fiction-comicsgraphic-novels"><a
+                                                                href="/products/fiction/comicsgraphic-novels">Comics/Graphic
+                                                            Novels</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-products-merchandise"><a href="/products/merchandise">Accessories</a>
+                                                </li>
+                                                <li id="mn_-content-dragon"><a href="/content/dragon">Dragon+ App</a>
+                                                </li>
+                                                <li id="mn_-products-tabletop-games-trpg-resources"
+                                                    class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/products/tabletop-games/trpg-resources">Resources</a>
+                                                    <ul>
+                                                        <li id="mn_-articles-features-character-sheets"><a
+                                                                href="/articles/features/character_sheets">Character
+                                                            Sheets</a></li>
+                                                        <li id="mn_-articles-features-basicrules"><a
+                                                                href="/articles/features/basicrules">Basic Rules</a>
+                                                        </li>
+                                                        <li id="mn_-digital-tools"><a href="/digital_tools">Digital
+                                                            Tools</a></li>
+                                                        <li id="mn_http-dnd-wizards-com-articles-news-dungeon-masters-guild-now-open">
+                                                            <a href="http://dnd.wizards.com/articles/news/dungeon-masters-guild-now-open"
+                                                               target="_blank">DM's Guild</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="mn_articles" class="has-children  "><span
+                                                class="accordion-icon"><span></span></span><a
+                                                href="/playevents">Monsters</a>
+                                            <ul class="panel">
+                                                <li id="mn_-playevents-organized-play"><a
+                                                        href="/playevents/organized-play">Adventurers League</a></li>
+                                                <li id="mn_-playevents-gather-together"><a
+                                                        href="/playevents/gather-together">Conventions</a></li>
+                                                <li id="mn_http-locator-wizards-com-brand-dnd"><a
+                                                        href="http://locator.wizards.com/#brand=dnd" target="_blank">Store
+                                                    &amp; Event Locator</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="mn_community" class="has-children  "><span
+                                                class="accordion-icon"><span></span></span><a
+                                                href="/articles">Archive</a>
+                                            <ul class="panel">
+                                                <li id="mn_-articles" class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a href="/articles">All
+                                                    articles</a>
+                                                    <ul>
+                                                        <li id="mn_-articles-news"><a href="/articles/news">News</a>
+                                                        </li>
+                                                        <li id="mn_-articles-events"><a
+                                                                href="/articles/events">Events</a></li>
+                                                        <li id="mn_-articles-features"><a href="/articles/features">Features</a>
+                                                        </li>
+                                                        <li id="mn_-articles-sage-advice"><a
+                                                                href="/articles/sage-advice">Sage Advice</a></li>
+                                                        <li id="mn_-articles-unearthed-arcana"><a
+                                                                href="/articles/unearthed-arcana">Unearthed Arcana</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-podcast-hub"><a href="/podcast-hub">Podcasts</a></li>
+                                                <li id="mn_-articles-media-resources" class="has-children  "><span
+                                                        class="accordion-icon"><span></span></span><a
+                                                        href="/articles/media-resources">Media</a>
+                                                    <ul>
+                                                        <li id="mn_-articles-media-resources-wallpapers"><a
+                                                                href="/articles/media-resources/wallpapers">Wallpaper</a>
+                                                        </li>
+                                                        <li id="mn_-articles-media-resources-comics"><a
+                                                                href="/articles/media-resources/comics">Comics</a></li>
+                                                        <li id="mn_-articles-features-fan-site-kit">
+                                                            <a href="/articles/features/fan-site-kit">Fan Site Kit</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="mn_-content-dragon">
+                                                    <a href="/content/dragon">Dragon+</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -66,15 +264,25 @@
                     </div>
                 </div>
             </div>
+            <!-- HEADER-->
+
+            <!-- MENU BAR-->
+
+            <!-- MENU BAR-->
+
+            <!--PAGE CONTENT-->
             <div class="region region-content">
                 <div id="block-system-main" class="block block-system">
                     <div class="content">
+                        <!--MAIN CONTENT-->
                         <div id="page-container">
                             <div id="page-header">
+                                <div class="card_image"><img src="../Resources/background-image.jpg" alt="Community">
+                                </div>
                                 <div class="page-width">
                                     <div class="intro">
                                         <h1>
-                                            <span class="first-line">New to the Game</span>
+                                            <span class="first-line">For new players</span>
                                             <span>What is D&amp;D?</span>
                                         </h1>
                                         <div class="text">
@@ -87,207 +295,158 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="../Resources/banner-image.jpg" alt="New to the Game">
                             </div>
+                            <article class="intro">
+                                <h2 class="with-social">Discover Player Factions</h2>
+                                <p></p>
+                                <p>The known player factions are organizations that have risen, been shattered, and
+                                    risen again several times. Their longevity and resilience are largely due to their
+                                    grassroots, secretive nature, and the near-autonomy of many of its members. The
+                                    Harpers, for instance, have “cells” and lone operatives throughout Faerûn, although
+                                    they interact and share information with one another from time to time as needs
+                                    warrant. With the Zhentarim, their public face appears more benign than their
+                                    otherwise power-hungry natures, offering the best mercenaries that money can buy.
+                                    Whether noble warriors, rugged survivalists, or deceptive agents, your choice to
+                                    join a player faction will help shape your involvement in the game's ongoing
+                                    story.</p>
+                                <p></p>
+                            </article>
+                            <div id="content" class="page-width" style="padding-top: 0px;">
+                                <div class="promo-box">
+                                    <div class="box product left">
+                                        <div class="promo-product">
+                                            <img src="../Resources/post-image-one.jpg?itok=miO_SEWa"
+                                                 alt="What is D&amp;D - History">
+                                        </div>
+                                        <div class="content">
+                                            <h2><span
+                                                    class="first-line">Waterdeep:</span><span>Dragon Heist’s Factions</span>
+                                            </h2>
+                                            <div class="text">
+                                                <p>Waterdeep: Dragon Heist has been widely touted as a perfect adventure
+                                                    for first-time Dungeon Masters, but crafted with enough depth and
+                                                    nuance to excite even veteran DMs.
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <a class="cta-button"
+                                                   href="/dungeons-and-dragons/what-dd/history/history-forty-years-adventure">
+                                                    Learn More </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="box product left">
+                                        <div class="promo-product">
+                                            <img src="../Resources/post-image-two.jpg"
+                                                 alt="Latest Story">
+                                        </div>
+                                        <div class="content">
+                                            <h2>
+                                                <span class="first-line">The Legend of Drizzt:</span><span>Becoming the Face of the Forgotten Realms</span>
+                                            </h2>
+                                            <div class="text">
+                                                <p>One could be forgiven for assuming Drizzt Do’Urden was planned to be
+                                                    the Forgotten Realms’ greatest hero from the moment he was dreamed
+                                                    into existence.
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <a class="cta-button" href="/story/waterdeep">
+                                                    Learn more </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="box product left">
+                                        <div class="promo-product">
+                                            <img src="http://dnd.wizards.com/sites/default/files/media/styles/inline_blocks/public/new-dd-what-dd-01.jpg?itok=YEP-tgl-"
+                                                 alt="what is d&amp;d - The realms">
+                                        </div>
+                                        <div class="content">
+                                            <h2>
+                                                <span class="first-line">Forgotten Realms</span><span>Explore Faerûn</span>
+                                            </h2>
+                                            <div class="text">
+                                                <p>Faerûn is an ancient land of magic and monsters, of peril and wonder.
+                                                    Which legend, among thousands of heroic tales, shall be yours?
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <a class="cta-button"
+                                                   href="/dungeons-and-dragons/what-is-dd/forgotten-realms">
+                                                    Learn More About the Realms </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-end"></div>
+                            </div>
+                            <!--MAIN CONTENT-->
                         </div>
                     </div>
                 </div>
+                <div class="see-all-container">
+                    <a href="/posts" class="button button-news">See All Posts</a>
+                </div>
             </div>
-            <!--NAV PANEL-->
 
-            <!--CADS NEWS-->
-            <div class="section">
-                <article class="races_cards">
-                    <h1 class="cards_names">Races</h1>
-                    <div class="races_cards">
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="https://i.kinja-img.com/gawker-media/image/upload/t_original/gr4ygwrpsmqmn0s9xxgx.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Race</div>
-                                        <p class="card__text">Race Description</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="http://wallpaper21.com/wp-content/uploads/2017/08/Drow-A-drow-or-dark-elf-is-a-dark-skinned-red-eyed-evil-race-who-live-far-below-the-surface-of-wallpaper-wpt7204219.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Race</div>
-                                        <p class="card__text">Race Description</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <img src="https://www.tribality.com/wp-content/uploads/2014/10/aarakocra.jpg">
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Race</div>
-                                        <p class="card__text">Race Description</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="classes_cards">
-                    <h1 class="cards_names">Classes</h1>
-                    <div class="characters_cards">
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="http://theindiedragon.com/wp-content/uploads/2014/01/Hoods-handy-for-keeping-out-the-rain.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Class</div>
-                                        <p class="card__text">Class Description</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="http://pro.bols.netdna-cdn.com/wp-content/uploads/2017/03/psionics.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Class</div>
-                                        <p class="card__text">Class Description</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="http://dnd.wizards.com/sites/default/files/media/styles/mosaic_thumbnail/public/images/mosaic/NEW_TO_DD_Classes_Fighter_T_140626.jpg?itok=CBMNp7LF">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Class</div>
-                                        <p class="card__text">Class Description</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="races_cards">
-                    <h1 class="cards_names">Monsters</h1>
-                    <div class="monsters_cards">
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="https://cdn.wccftech.com/wp-content/uploads/2017/12/wallpaper_1920-x-1080-wallpaper.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Monster</div>
-                                        <p class="card__text">Description of monster</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="https://cdn.wccftech.com/wp-content/uploads/2017/12/wallpaper_1920-x-1080-wallpaper.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Monster</div>
-                                        <p class="card__text">Description of monster</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="cards">
-                            <li class="cards__item">
-                                <div class="card">
-                                    <div class="card__image"><img
-                                            src="https://cdn.wccftech.com/wp-content/uploads/2017/12/wallpaper_1920-x-1080-wallpaper.jpg">
-                                    </div>
-                                    <div class="card__content">
-                                        <div class="card__title">Name of Monster</div>
-                                        <p class="card__text">Description of monster</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <!--CADS NEWS-->
+            <!--PAGE CONTENT-->
 
+            <!--Footer-->
+            <div class="region region-footer">
+                <div id="block-dx1-common-blocks-block-dx1-common-blocks-footer" class="block block-dx1-common-blocks">
+                    <div class="content">
+                        <footer>
+                            <!-- ARROW-->
+                            <div id="back-to-top" style="display: block;"><a href="#page">Back to top</a></div>
+                            <!-- ARROW-->
+                            <div class="main-footer">
+                                <div class="page-width">
+                                    <div class="text">
+                                        <!--<div id="locale-select">
+                                            <label for="locale-select-ddl">Select your language:</label>
+                                            <div class="select-wrapper">
+                                                <select id="locale-select-ddl">
+                                                    <option value="en-US">English - US</option>
+                                                </select>
+                                            </div>
+                                        </div>-->
+                                        <p class="brand-family-title">Wizards brand family:</p>
+                                        <p class="brand-family-menu">
+                                            <a href="https://magic.wizards.com" target="_blank">Magic</a><span
+                                                class="separator"> | </span><a href="http://dnd.wizards.com"
+                                                                               target="_blank">D&amp;D</a><span
+                                                class="separator"> | </span><a href="http://wpn.wizards.com/"
+                                                                               target="_blank">wpn</a><span
+                                                class="separator"> | </span><a href="http://dm.takaratomy.co.jp/"
+                                                                               target="_blank">Duel masters</a><span
+                                                class="separator"> | </span><a href="http://avalonhill.wizards.com/"
+                                                                               target="_blank">Avalon hill</a></p>
+                                        <p class="terms">
+                                            <a href="http://company.wizards.com/tou" target="_blank">Terms of
+                                                Use</a><span
+                                                class="separator"> | </span><a
+                                                href="http://company.wizards.com/policies/web/privacy" target="_blank">Privacy
+                                            Policy</a><span class="separator"> | </span><a
+                                                href="http://company.wizards.com/conduct" target="_blank">Code of
+                                            Conduct</a><span class="separator"> | </span><a
+                                                href="http://company.wizards.com/policies/web/cookie"
+                                                target="_blank">Cookies</a><span
+                                                class="separator"> | </span><a href="http://support.wizards.com/"
+                                                                               target="_blank">Customer Service</a></p>
 
-        <!--Footer-->
-        <div class="region region-footer">
-            <div id="block-dx1-common-blocks-block-dx1-common-blocks-footer" class="block block-dx1-common-blocks">
-                <div class="content">
-                    <footer>
-                        <!-- ARROW-->
-                        <div id="back-to-top" style="display: block;"><a href="#page">Back to top</a></div>
-                        <!-- ARROW-->
-                        <div class="main-footer">
-                            <div class="page-width">
-                                <div class="text">
-                                    <!--<div id="locale-select">
-                                        <label for="locale-select-ddl">Select your language:</label>
-                                        <div class="select-wrapper">
-                                            <select id="locale-select-ddl">
-                                                <option value="en-US">English - US</option>
-                                            </select>
-                                        </div>
-                                    </div>-->
-
-                                    <p class="brand-family-title">Wizards brand family:</p>
-                                    <p class="brand-family-menu">
-                                        <a href="https://magic.wizards.com" target="_blank">Magic</a><span
-                                            class="separator"> | </span><a href="http://dnd.wizards.com"
-                                                                           target="_blank">D&amp;D</a><span
-                                            class="separator"> | </span><a href="http://wpn.wizards.com/"
-                                                                           target="_blank">wpn</a><span
-                                            class="separator"> | </span><a href="http://dm.takaratomy.co.jp/"
-                                                                           target="_blank">Duel masters</a><span
-                                            class="separator"> | </span><a href="http://avalonhill.wizards.com/"
-                                                                           target="_blank">Avalon hill</a></p>
-
-                                    <p class="terms">
-                                        <a href="http://company.wizards.com/tou" target="_blank">Terms of Use</a><span
-                                            class="separator"> | </span><a
-                                            href="http://company.wizards.com/policies/web/privacy" target="_blank">Privacy
-                                        Policy</a><span class="separator"> | </span><a
-                                            href="http://company.wizards.com/conduct" target="_blank">Code of
-                                        Conduct</a><span class="separator"> | </span><a
-                                            href="http://company.wizards.com/policies/web/cookie"
-                                            target="_blank">Cookies</a><span
-                                            class="separator"> | </span><a href="http://support.wizards.com/"
-                                                                           target="_blank">Customer Service</a></p>
-
+                                    </div>
+                                    <!--menu-footer-sellers-->
+                                    <p class="logo wizard"><a href="http://company.wizards.com" target="_blank">Wizards
+                                        of
+                                        the Coast</a></p>
                                 </div>
-                                <!--menu-footer-sellers-->
-                                <p class="logo wizard"><a href="http://company.wizards.com" target="_blank">Wizards of
-                                    the Coast</a></p>
                             </div>
-                        </div>
-                    </footer>
+                        </footer>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 </body>
