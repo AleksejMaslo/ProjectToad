@@ -61,6 +61,7 @@ ul#menu {
     color: #eee;
 }
 
+
 ul#menu > li {
     float: left;
     list-style-type: none;
@@ -214,12 +215,6 @@ ul.submenu li a:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .carousel-wrapper {
-        display: none;
-    }
-}
-
 .carousel-item {
     position: absolute;
     top: 0;
@@ -282,12 +277,6 @@ ul.submenu li a:hover {
     background: url('../Resources/background-image3.jpg');
     background-size: cover;
     background-position: center;
-}
-
-@media (max-width: 480px) {
-    .item-1, .item-2, .item-3 {
-
-    }
 }
 
 *:target ~ .item-1 {
