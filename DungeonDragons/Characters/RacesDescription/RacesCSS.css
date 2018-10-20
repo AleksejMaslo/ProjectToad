@@ -1,0 +1,563 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    min-width: 320px;
+}
+
+#viewport {
+    overflow: hidden;
+    position: relative;
+}
+
+div {
+    display: block;
+}
+
+* {
+    line-height: 2rem;
+    background-size: 100% auto;
+    box-sizing: inherit;
+    outline: 0;
+}
+
+/* HEADER BEGINNING*/
+
+header { /* Header background*/
+    background-size: auto;
+    position: relative;
+    z-index: 500;
+}
+
+.page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+    position: relative;
+}
+
+/* HEAD NAV MENU */
+
+/*Style for the first level menu bar*/
+
+ul#menu {
+    float: left;
+    background: url(../Resources/Characters/RacesDescription/header_background.jpg) 50% 0 no-repeat;
+    box-shadow: 10px 10px 25px #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5em;
+    margin: 0;
+    padding: 0 10px;
+    color: #eee;
+}
+
+ul#menu > li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+label {
+    font-size: 1.6rem;
+    position: relative;
+    display: block;
+    padding: 0 18px 0 12px;
+    line-height: 3em;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid rgba(255, 255, 255, .5);
+    border-bottom: 0 solid rgba(255, 255, 255, .5);
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transition: border-bottom .1s, border-top .1s .1s;
+}
+
+label:hover,
+input:checked ~ label {
+    background: rgba(0, 0, 0, .3);
+}
+
+input:checked ~ label:after {
+    border-top: 0 solid rgba(255, 255, 255, .5);
+    border-bottom: 4px solid rgba(255, 255, 255, .5);
+    transition: border-top .1s, border-bottom .1s .1s;
+}
+
+/*hide the inputs*/
+input {
+    display: none
+}
+
+/*show the second levele menu of the selected voice*/
+input:checked ~ ul.submenu {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in;
+}
+
+/*style for the second level menu*/
+ul.submenu {
+    font-size: 1.6rem;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background: #444;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    transition: max-height 0.5s ease-out;
+    position: absolute;
+    min-width: 100%;
+}
+
+ul.submenu li a {
+    display: block;
+    padding: 12px;
+    color: #ddd;
+    text-decoration: none;
+    box-shadow: 0 -1px rgba(0, 0, 0, .5) inset;
+    transition: background .3s;
+    white-space: nowrap;
+}
+
+ul.submenu li a:hover {
+    background: rgba(0, 0, 0, .3);
+}
+
+/* NAV MENU END */
+
+/*STANDART END*/
+
+body.responsive-enabled #site #site-main .container, body.responsive-enabled #site #site-main.fixed .container {
+    width: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#site.fixed .container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#site-main > .container {
+    max-width: 1200px ;
+    position: relative;
+    perspective: none;
+    transform: none;
+    z-index: 4;
+}
+
+body.responsive-enabled #site #site-main .container #content, body.responsive-enabled #site #site-main.fixed .container #content {
+    width: auto;
+    box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+    #site.two-column #content {
+        padding: 15px 10px ;
+    }
+}
+
+#site.two-column #content {
+    padding: 20px 10px ;
+    display: flex;
+}
+
+.site #content {
+    background: 0;
+}
+
+#content {
+    z-index: auto;
+}
+
+#content {
+    box-shadow: none;
+    background: #f9f9f9 none;
+    color: #000;
+    padding: 20px;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+}
+
+#site.two-column .primary-content {
+    position: static;
+    float: none;
+    width: auto;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: none ;
+    min-width: 0;
+}
+
+#site.two-column .primary-content {
+    float: left;
+    width: 640px;
+}
+
+#content .primary-content {
+    position: static;
+    z-index: auto;
+}
+
+#content .primary-content {
+    z-index: 2;
+    position: relative;
+}
+
+.primary-content:first-child {
+    margin-left: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+.static-container-details .content-container {
+    font-size: 16px;
+}
+
+element.style {
+}
+
+.static-container .ad-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ad-container {
+    width: 1000px;
+    margin: 0 auto;
+    background: transparent none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.ad-container {
+    position: relative;
+    z-index: 0;
+}
+
+@media (min-width: 700px) {
+    .static-container-details .content-container .content-image {
+        float: right;
+        width: 330px;
+        padding: 0 0 15px;
+    }
+}
+
+.static-container-details .content-container .content-image {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.static-container-details .content-container .content-image .image {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+.static-container-details .content-container h1 {
+    font-size: 36px;
+}
+.static-container-details .content-container h1 {
+    font-size: 32px;
+}
+.static-container-details .content-container h1, .static-container-details .content-container h2, .static-container-details .content-container h3 {
+    font-weight: normal;
+}
+.static-container-details .content-container h1 {
+    font-size: 32px;
+}
+.static-container-details .content-container h1, .static-container-details .content-container h2, .static-container-details .content-container h3 {
+    font-weight: normal;
+}
+.content-container h1, .content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
+    color: #000;
+}
+h1 {
+    font-size: 42px;
+    text-transform: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto,Helvetica,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 .2em;
+    letter-spacing: 0;
+    text-transform: normal;
+    word-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.static-container-details .content-container .compendium-header-subtitle {
+    font-size: 20px;
+    color: #979AA4;
+}
+
+body:not(.body-forum):not(.section-posts):not(.section-changelog):not(.body-privatemessage-details) blockquote {
+    background: white;
+    padding: 20px;
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e0dcdc;
+    border-right: 1px solid #e0dcdc;
+    border-top: 0;
+    border-bottom: 0;
+    overflow: visible;
+    border-radius: 0;
+    color: #242527;
+    margin: 40px 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+.static-container-details .content-container blockquote {
+    font-size: 14px;
+    margin: 5px 0;
+}
+blockquote {
+    color: #000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    color: #000;
+    border-color: lightgray;
+    background: #e0e0e0;
+    margin: 19.5px 5px 19.5px 5px;
+    padding: 12px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+}
+blockquote {
+    margin: 0 40px 19.5px;
+}
+
+.static-container-details .content-container blockquote p {
+    font-size: 14px;
+}
+.static-container-details .content-container p {
+    line-height: 30px;
+    color: #242527;
+    font-size: inherit;
+}
+p {
+    margin: 0 0 15px;
+}
+
+body:not(.body-forum):not(.section-posts):not(.section-changelog):not(.body-privatemessage-details) blockquote .compendium-blockquote-footer {
+    width: 100%;
+    text-align: right;
+}
+.static-container-details .content-container blockquote p {
+    font-size: 14px;
+}
+.static-container-details .content-container p {
+    line-height: 30px;
+    color: #242527;
+    font-size: inherit;
+}
+blockquote>*:last-child {
+    margin-bottom: 0;
+}
+p:empty, p:last-child {
+    margin: 0;
+}
+
+.static-container-details .content-container p {
+    line-height: 30px;
+    color: #242527;
+    font-size: inherit;
+}
+
+.static-container-details .content-container h2 {
+    font-size: 26px;
+}
+.static-container-details .content-container h2 {
+    font-size: 26px;
+}
+.static-container-details .content-container h1, .static-container-details .content-container h2, .static-container-details .content-container h3 {
+    font-weight: normal;
+}
+.static-container-details .content-container h2 {
+    font-size: 26px;
+}
+.static-container-details .content-container h1, .static-container-details .content-container h2, .static-container-details .content-container h3 {
+    font-weight: normal;
+}
+.content-container h1, .content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
+    color: #000;
+}
+
+.static-container-details .content-container h2::after, .static-container-details .content-container h3::after {
+    content: '';
+    width: 100%;
+    margin: 5px auto 20px;
+    height: 1px;
+    background-color: #ee8600;
+    display: block;
+}
+
+.static-container-details .content-container h4 {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+.static-container-details .subitems-list-details {
+    margin-top: 20px;
+}
+
+.static-container-footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px 0;
+}
+
+.static-container-footer-spacer {
+    flex: 1;
+}
+
+.source-summary {
+    font-size: 12px;
+    font-family: "Roboto Condensed",Roboto,Helvetica,sans-serif;
+    font-style: italic;
+}
+
+
+/* FOOTER START*/
+.region-footer {
+    background-color: #333333;
+}
+
+footer {
+    clear: both;
+    font-size: 1.2rem /* 12px/14px */;
+    padding: 0 0 25px;
+    position: relative;
+}
+
+footer #back-to-top {
+    display: none;
+    margin-left: -80px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+}
+
+footer #back-to-top a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    width: 160px;
+    height: 40px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+footer .main-footer {
+    font-weight: 600;
+    text-align: left;
+    padding-top: 10px;
+    position: relative;
+}
+
+footer .main-footer:before {
+    content: "";
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+footer .main-footer .footer-text {
+    margin: 0 230px 0 280px;
+    color: #ffffff;
+}
+
+footer .main-footer .footer-text p.brand-family-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 25px 0 10px 0;
+    padding-top: 25px;
+}
+
+* > footer .main-footer .footer-text p {
+    display: block;
+    font-size: 1.6rem;
+    margin: 0 0 1.6rem;
+    padding: 0;
+}
+
+footer .main-footer .footer-text p.brand-family-menu {
+    text-transform: uppercase;
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+* > footer .main-footer .footer-text p {
+    display: block;
+}
+
+footer .main-footer .footer-text a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .main-footer .footer-text p.brand-family-menu span.separator {
+    margin: 0 4px;
+}
+
+footer .main-footer .footer-text p.terms {
+    font-weight: 400;
+}
+
+footer .main-footer .wizard {
+    position: absolute;
+    bottom: 1rem;
+    left: 10rem;
+}

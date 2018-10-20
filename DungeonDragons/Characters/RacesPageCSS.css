@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
 html {
     font-size: 62.5%;
 }
@@ -11,7 +14,6 @@ body {
     background: #ffffff;
     min-width: 320px;
 }
-
 
 #viewport {
     overflow: hidden;
@@ -27,6 +29,11 @@ div {
     background-size: 100% auto;
     box-sizing: inherit;
     outline: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* HEADER BEGINNING*/
@@ -60,7 +67,6 @@ ul#menu {
     padding: 0 10px;
     color: #eee;
 }
-
 
 ul#menu > li {
     float: left;
@@ -225,27 +231,6 @@ ul.submenu li a:hover {
     transition: all 0.5s ease-in-out;
 }
 
-.arrow {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 50px;
-    height: 100%;
-    background: url("../Resources/arrow.png") 50% 50% / 50px no-repeat;
-}
-
-.arrow-prev {
-    left: 0;
-}
-
-.arrow-next {
-    right: 0;
-    transform: rotate(180deg);
-}
-
-.light {
-    color: white;
-}
 
 @media (max-width: 480px) {
     .arrow, .light .arrow {
@@ -254,56 +239,30 @@ ul.submenu li a:hover {
     }
 }
 
-/*Select every element*/
-[id^="item"] {
-    display: none;
-}
-
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background: url('../Resources/background-image.jpg');
+    background: url('../Resources/myCharacter-background2.jpg');
     background-size: cover;
     background-position: center;
 }
-
-.item-2 {
-    background: url('../Resources/background-image2.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.item-3 {
-    background: url('../Resources/background-image3.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-*:target ~ .item-1 {
-    opacity: 0;
-}
-
-#item-1:target ~ .item-1 {
-    opacity: 1;
-}
-
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
-    opacity: 1;
-}
-
 /*SLIDER END*/
 
 /* MAIN CONTENT */
 
-/* NEWS TEXT START */
-article.news, .product article.news {
+/*INTRO TEXT*/
+article.intro, .product article.intro {
     display: block;
 }
+article.intro {
+    padding: 0px 0px 25px;
+}
 
-.news h2 {
+article h2.with-social {
+    width: 60%;
+}
+article h2 {
     color: black;
-    text-align: center;
     margin-bottom: 35px;
     text-transform: uppercase;
     display: block;
@@ -313,68 +272,210 @@ article.news, .product article.news {
     width: 100%;
 }
 
-.news p {
-    text-align: center;
+.region-content #content p, ul, ol, dt, dd {
     color: black;
+    font-size: 1.6rem;
+    margin: 0 0 1.6rem;
+    padding: 0;
 }
 
-/* NEWS TEXT END */
 
-/* BOX NEWS BEGGINING*/
-
-.promo-box .product.box {
-    margin: 2% auto 20px; /* Отступ каждой новости */
-    position: relative; /* Позиция текста */
+/*INTRO TEXT*/
+/*FIRST CONTAINERS*/
+.snip1360 {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    float: left;
     overflow: hidden;
-    box-shadow: 10px 10px 25px #000000; /* Тень */
-    border-radius: 10px; /* Округление углов */
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 16px;
+    background-color: #ffffff;
 }
-
-.promo-box .product .content {
+.snip1360 * {
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+.snip1360 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+.snip1360 figcaption {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 25px 55px;
+    position: relative;
+}
+.snip1360 figcaption:before {
     position: absolute;
-    top: 15%;
-    left: 70px;
-    right: 50%;
-    height: auto;
-    width: auto;
-    cursor: default;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1360 figcaption a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #cccccc;
+    color: #000000;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.snip1360 figcaption a:hover {
+    opacity: 1;
+}
+.snip1360 h2 {
+    margin: 0 0 10px;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.snip1360 p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+/*FIRST CONTAINERS*/
+
+/*NEW RACES CONTAINERS*/
+
+#content {
+    padding-bottom: 35px;
+    z-index: 10;
+}
+.page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+    position: relative;
 }
 
-.promo-box .product img {
-    display: block;
+.content-grid, .content-grid *, .content-grid *:before, .content-grid *:after {
+    box-sizing: border-box;
+}
+.content-grid {
+    margin: 0 0 40px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    font-size: 0;
+}
+
+.content-grid.large li {
+    width: 50%;
+    height: auto;
+}
+.content-grid.large li, .content-grid li.large .item {
+    height: auto;
+}
+.content-grid li {
+    font-size: 1.4rem;
+    vertical-align: top;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.content-grid li, .content-grid li .item {
+    height: 336px;
+}
+.content-grid .item {
+    border: 1px solid #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.content-grid, .content-grid *, .content-grid *:before, .content-grid *:after {
+    box-sizing: border-box;
+}
+
+.content-grid .item:before {
+    content: "";
+    width: 36px;
+    height: 0;
+    margin: 0 0 0 -18px;
+    background: url(../img/interface/content-grid-selection@2x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    z-index: 30;
+}
+
+.content-grid .item .image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-grid.large li .item .image img {
     width: 100%;
     height: auto;
-    cursor: default;
+    margin: 0;
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
 }
 
-.promo-box .product .content h2 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    cursor: default;
+.content-grid .item .image img {
+    margin: 0 0 0 -300px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 
-.promo-box .product .content p {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: #FFF;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.promo-box .product .content h2 span.first-line {
-    font-size: 2.5rem;
-    line-height: 3.1rem;
-    color: #959595;
-    display: table;
-}
-
-.promo-box .product .content h2 span {
-    background-color: rgba(20, 12, 10, .7);
-    padding: 0 2px;
-    text-transform: uppercase;
-    line-height: 4.1rem;
+.content-grid .item h2 {
     color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+    left: 20px;
+    z-index: 10;
+}
+
+.content-grid .item h2 span {
+    background: rgba(20,12,10, .7);
+    box-shadow: -5px 0 0 rgba(20,12,10, .7), 5px 0 0 rgba(20,12,10, .7);
+    transition-property: box-shadow, background-color;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+.content-grid .item .item-content .details {
+    display: none;
+}
+
+.actions {
+    text-align: center;
+    margin: 20px 0 0;
 }
 
 .cta-button {
@@ -384,8 +485,7 @@ article.news, .product article.news {
     position: relative;
     z-index: 100;
 }
-
-.cta-button {
+.cta-button, .cta-button:after {
     color: #fff;
     font-weight: 700;
     font-size: 1.6rem;
@@ -398,39 +498,10 @@ article.news, .product article.news {
     transition-timing-function: ease-in-out;
 }
 
-/* BOX NEWS END*/
+/*NEW RACES CONTAINERS*/
 
-/* SEE ALL BUTTON START */
+/* FOOTER*/
 
-.region .see-all-container {
-    margin: 20px auto 40px;
-}
-
-.region .see-all-container .button {
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-family: "Roboto Condensed", Roboto, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    background: #BC0F0F;
-    height: 50px;
-    width: 100%;
-    max-width: 300px;
-    min-width: 250px;
-    box-shadow: none;
-    border: 0;
-    transition: 100ms linear all;
-    text-transform: uppercase;
-    text-shadow: none;
-}
-
-/* SEE ALL BUTTON END */
-
-/* FOOTER START*/
 .region-footer {
     background-color: #333333;
 }
@@ -529,4 +600,33 @@ footer .main-footer .wizard {
     position: absolute;
     bottom: 1rem;
     left: 10rem;
+}
+
+footer .main-footer .wizard a {
+    width: 131px;
+    height: 84px;
+    background-image: url(../Resources/Wizards_of_the_Coast_logo.png);
+}
+
+footer .main-footer .logo a {
+    text-indent: -999px;
+    outline: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+}
+
+footer .main-footer .privacy {
+    position: absolute;
+    right: 125px;
+    bottom: 0;
+}
+
+footer .main-footer .logo {
+    margin: 0;
+}
+
+footer .main-footer p {
+    font-size: 1.2rem;
 }
