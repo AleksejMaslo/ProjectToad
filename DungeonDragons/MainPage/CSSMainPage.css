@@ -29,6 +29,11 @@ div {
     outline: 0;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* HEADER BEGINNING*/
 
 header { /* Header background*/
@@ -431,6 +436,7 @@ article.news, .product article.news {
 /* SEE ALL BUTTON END */
 
 /* FOOTER START*/
+
 .region-footer {
     background-color: #333333;
 }
@@ -529,4 +535,33 @@ footer .main-footer .wizard {
     position: absolute;
     bottom: 1rem;
     left: 10rem;
+}
+
+footer .main-footer .wizard a {
+    width: 131px;
+    height: 84px;
+    background-image: url(../Resources/Wizards_of_the_Coast_logo.png);
+}
+
+footer .main-footer .logo a {
+    text-indent: -999px;
+    outline: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+}
+
+footer .main-footer .privacy {
+    position: absolute;
+    right: 125px;
+    bottom: 0;
+}
+
+footer .main-footer .logo {
+    margin: 0;
+}
+
+footer .main-footer p {
+    font-size: 1.2rem;
 }
