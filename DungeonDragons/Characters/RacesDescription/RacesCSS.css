@@ -49,7 +49,7 @@ header { /* Header background*/
 
 ul#menu {
     float: left;
-    background: url(../Resources/Characters/RacesDescription/header_background.jpg) 50% 0 no-repeat;
+    background: url(../../Resources/header_background.jpg) 50% 0 no-repeat;
     box-shadow: 10px 10px 25px #000000;
     position: fixed;
     top: 0;
