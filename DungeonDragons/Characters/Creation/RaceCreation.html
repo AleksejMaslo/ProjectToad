@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Race</title>
+    <link rel="stylesheet" type="text/css" href="RaceCreationStyle.css">
+</head>
+<body class="site  site-dndbeyond site-www body-rpgrace body-rpgrace-manageracescreate show-ads user-authenticated lang-en site-lang-en template-none skin-light-on-dark responsive-enabled"
+      data-user-lang="1">
+<div id="viewport">
+    <div id="viewport-content">
+        <div id="page" class="page">
+            <div class="region region-header">
+                <div class="content">
+                    <header>
+                        <!-- MENU BAR-->
+                        <ul id="menu">
+                            <li>
+                                <input id="check01" type="checkbox" name="menu"/>
+                                <label for="check01"><a href="../MainPage/HTMLMainPage.html">Home</a></label>
+                            </li>
+                            <li>
+                                <input id="check02" type="checkbox" name="menu"/>
+                                <label for="check02">My Content</label>
+                                <ul class="submenu">
+                                    <li><a href="../MyContent/MyContentCharacters.html">Characters</a></li>
+                                    <li><a href="../MyContent/CampaignPage.html">Campaigns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="check03" type="checkbox" name="menu"/>
+                                <label for="check03">Characters</label>
+                                <ul class="submenu">
+                                    <li><a href="../Characters/RacesPage.html">Races</a></li>
+                                    <li><a href="../Characters/ClassesPage.html">Classes</a></li>
+                                    <li><a href="../Characters/BackgroundsPage.html">Backgrounds</a></li>
+                                    <li><a href="../Characters/FeatsPage.html">Feats</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="check04" type="checkbox" name="menu"/>
+                                <label for="check04">Spells</label>
+                                <ul class="submenu">
+                                    <li><a href="#">Official</a></li>
+                                    <li><a href="#">Create</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="check05" type="checkbox" name="menu"/>
+                                <label for="check05">Items</label>
+                                <ul class="submenu">
+                                    <li><a href="#">Official Magic Items</a></li>
+                                    <li><a href="#">Official Equipment</a></li>
+                                    <li><a href="#">Create</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- MENU BAR-->
+                    </header>
+                </div>
+            </div>
+
+
+            <div id="site" class="fixed single-column">
+                <div id="site-main" style="margin-bottom: -50px">
+                    <header class="page-header">
+                        <div class="page-header__extras">
+                            <div class="page-header__spacer"></div>
+                            <div class="page-header__extra page-header__extra--content2">
+                                <div class="more-links">
+                                    <div class="more-links__links">
+                                        <a href="/homebrew/races" class="button-alt button-alt-homebrew characters">
+                    <span class="label">View Homebrew Races
+        </span>
+                                        </a>
+                                        <a href="/homebrew/creations/create-race"
+                                           class="button-alt button-alt-background characters">
+                    <span class="label">Create a Race
+        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-header__primary">
+                            <div class="page-heading">
+                                <div class="page-heading__prefix">
+
+                                </div>
+                                <div class="page-heading__content">
+                                    <h1 class="page-title">
+                                        Create a Race
+                                    </h1>
+                                </div>
+                                <div class="page-heading__suffix">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </header>
+
+                    <div class="container">
+                        <div id="content" class="main content-container">
+                            <section class="primary-content" role="main">
+
+
+                                <div class="ddb-homebrew-create ddb-homebrew-create-race">
+
+                                    <div class="ddb-homebrew-create-body">
+
+                                        <form id="race-form" class="ddb-homebrew-create-form"
+                                              enctype="multipart/form-data"
+                                              method="post" action="/homebrew/creations/create-race/create"
+                                              data-validation-disabled="true">
+
+                                            <input id="field-security-token" name="security-token" type="hidden"
+                                                   value="398996adce8c4ab98a44cd535351a714"><input
+                                                id="field-authenticity-token"
+                                                name="f52378458117b59e76f7d7e7bcf0a996e"
+                                                type="hidden"
+                                                value="eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..78w-Qax-ACRwFDD5rHDQaQ.PwEZ1uD8vFjGgqgHTJSTrnywb4m-myBDZTFe03KD4gAkMFGT6M4Mf2CI5ASD29mo.eSVZQe7mnSOj0PfH1a7PgA">
+
+                                            <div class="ddb-homebrew-create-header ddb-homebrew-create-header-main">
+                                                <div class="ddb-homebrew-create-header-primary">
+                                                    <div class="ddb-homebrew-create-header-primary-text">
+                                                        Basic Information
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-header-primary-text-callout">
+                                                        <span style="color:red;">*</span> Required
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-header-secondary">
+                                                    <div class="ddb-homebrew-create-header-secondary-text">
+                                                        Start by entering descriptive information for your homebrew race
+                                                        below. You
+                                                        will be able to provide more relevant details once it is created
+                                                        to take
+                                                        advantage of advanced search, filtering, and character builder /
+                                                        sheet
+                                                        features.
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-header-expansion">
+                                                    <div class="ddb-homebrew-create-header-expansion-icon open"></div>
+                                                    <script>
+                                                        $(".ddb-homebrew-create-header-main").click(function (e) {
+                                                            Waterdeep.ShowMore.handleExpansion(e, $(".ddb-homebrew-create-header-main .ddb-homebrew-create-header-expansion-icon"), $(".ddb-homebrew-create-form-fields-basic"));
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+
+                                            <div class="ddb-homebrew-create-form-fields ddb-homebrew-create-form-fields-basic ">
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-name">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip req"
+                                                         title="What your race will be called.">Name
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="name" id="field-name" value=""
+                                                               autocomplete="off"
+                                                               placeholder="Enter race name"
+                                                               data-validation-required="true"
+                                                               maxlength="128" data-validation-length="2..128"
+                                                               data-validation-length-message="Must be within 2 and 128 characters long.">
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-size">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip req"
+                                                         title="Choose your race's size (Tiny, Small, Medium, Large, Huge, Gargantuan).">
+                                                        Size
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <select id="field-size" name="size" class=" "
+                                                                data-validation-required="true">
+
+                                                            <option value="" selected="selected">—</option>
+
+                                                            <option value="7" id="field-size-gargantuan">Gargantuan
+                                                            </option>
+
+                                                            <option value="6" id="field-size-huge">Huge</option>
+
+                                                            <option value="5" id="field-size-large">Large</option>
+
+                                                            <option value="4" id="field-size-medium">Medium</option>
+
+                                                            <option value="3" id="field-size-small">Small</option>
+
+                                                            <option value="2" id="field-size-tiny">Tiny</option>
+
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-speed-walking">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip">Speed
+                                                        Walking
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="speed-walking" id="field-speed-walking"
+                                                               value=""
+                                                               placeholder="10, 20, 30, etc."
+                                                               data-validation-optional="true"
+                                                               data-validation-range="..500"
+                                                               data-validation-range-message="Maximum speed allowed is 500.">
+
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-speed-burrowing">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip"
+                                                         title="Enter the number of feet that represent your race's burrowing speed, or leave blank if not applicable.">
+                                                        Speed Burrowing
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="speed-burrowing"
+                                                               id="field-speed-burrowing"
+                                                               value="" placeholder="10, 20, 30, etc."
+                                                               data-validation-optional="true"
+                                                               data-validation-range="..500"
+                                                               data-validation-range-message="Maximum speed allowed is 500.">
+
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-speed-climbing">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip"
+                                                         title="Enter the number of feet that represent your race's climbing speed, or leave blank if not applicable.">
+                                                        Speed Climbing
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="speed-climbing"
+                                                               id="field-speed-climbing" value=""
+                                                               placeholder="10, 20, 30, etc."
+                                                               data-validation-optional="true"
+                                                               data-validation-range="..500"
+                                                               data-validation-range-message="Maximum speed allowed is 500.">
+
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-speed-flying">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip"
+                                                         title="Enter the number of feet that represent your race's flying speed, or leave blank if not applicable.">
+                                                        Speed Flying
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="speed-flying" id="field-speed-flying"
+                                                               value=""
+                                                               placeholder="10, 20, 30, etc."
+                                                               data-validation-optional="true"
+                                                               data-validation-range="..500"
+                                                               data-validation-range-message="Maximum speed allowed is 500.">
+
+                                                    </div>
+                                                </div>
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-speed-swimming">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip"
+                                                         title="Enter the number of feet that represent your race's swimming speed, or leave blank if not applicable.">
+                                                        Speed Swimming
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="speed-swimming"
+                                                               id="field-speed-swimming" value=""
+                                                               placeholder="10, 20, 30, etc."
+                                                               data-validation-optional="true"
+                                                               data-validation-range="..500"
+                                                               data-validation-range-message="Maximum speed allowed is 500.">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-short-description">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip"
+                                                         title="Enter the short description summary for your race. This is what shows at the top of the Confirm Race modal in the character builder.">
+                                                        Short Description
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <div class="b-tab b-tab-b tabbed-container p-markup-editor markup-editor j-content-editor no-view-state"
+                                                             data-is-new-content="true"
+                                                             data-show-markup-selection="false">
+                                                            <ul class="b-tab-nav j-tab-nav tabbed-tabs u-hidden">
+                                                                <li class="b-tab-item selected"
+                                                                    data-markup-mode="editor"
+                                                                    style="display: none;">
+                                                                    <a>Editor</a>
+                                                                </li>
+
+                                                                <li class="b-tab-item" data-markup-mode="markup"
+                                                                    style="display: none;">
+                                                                    <a>Markup</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <div class="b-tab-content tabbed-content j-tab-content">
+                                                                <input type="hidden"
+                                                                       class="markup-type-field j-markup-type"
+                                                                       name="short-description-type"
+                                                                       id="field-short-description-type" value="1">
+                                                                <div class="b-tab-contentWrapper tabbed-content-wrap">
+
+                                                                    <div id="tab-wysiwyg"
+                                                                         class="b-tab-contentArea tab-wysiwyg"
+                                                                         data-markup-mode="editor" data-markup-type="1"
+                                                                         data-markup-name="wysiwyg"
+                                                                         style="display: block;">
+                                                                        <div class="loading-message-wrapper j-loading-message">
+                                                                            <span class="loading-message">Loading editor...</span>
+                                                                            <div id="mceu_28"
+                                                                                 class="mce-tinymce mce-container mce-panel"
+                                                                                 hidefocus="1" tabindex="-1"
+                                                                                 role="application"
+                                                                                 style="visibility: hidden; border-width: 1px; width: 100%;">
+                                                                                <div id="mceu_28-body"
+                                                                                     class="mce-container-body mce-stack-layout">
+                                                                                    <div id="mceu_29"
+                                                                                         class="mce-toolbar-grp mce-container mce-panel mce-first mce-stack-layout-item"
+                                                                                         hidefocus="1" tabindex="-1"
+                                                                                         role="group">
+                                                                                        <div id="mceu_29-body"
+                                                                                             class="mce-container-body mce-stack-layout">
+                                                                                            <div id="mceu_30"
+                                                                                                 class="mce-container mce-toolbar mce-first mce-last mce-stack-layout-item"
+                                                                                                 role="toolbar">
+                                                                                                <div id="mceu_30-body"
+                                                                                                     class="mce-container-body mce-flow-layout">
+                                                                                                    <div id="mceu_31"
+                                                                                                         class="mce-container mce-first mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_31-body">
+                                                                                                            <div id="mceu_0"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last mce-disabled"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_0"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Undo"
+                                                                                                                 aria-disabled="true">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-undo"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_32"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_32-body">
+                                                                                                            <div id="mceu_1"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_1"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Paste">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-paste"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_33"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_33-body">
+                                                                                                            <div id="mceu_2"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_2"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Bold">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-bold"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_34"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_34-body">
+                                                                                                            <div id="mceu_3"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_3"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Italic">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-italic"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_35"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_35-body">
+                                                                                                            <div id="mceu_4"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_4"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Underline">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-underline"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_36"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_36-body">
+                                                                                                            <div id="mceu_5"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_5"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Strikethrough">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-strikethrough"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_37"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_37-body">
+                                                                                                            <div id="mceu_6"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_6"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Blockquote">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-blockquote"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_38"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_38-body">
+                                                                                                            <div id="mceu_7"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_7"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Source code">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-code"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_39"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_39-body">
+                                                                                                            <div id="mceu_8"
+                                                                                                                 class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_8"
+                                                                                                                 role="button"
+                                                                                                                 aria-haspopup="true">
+                                                                                                                <button id="mceu_8-open"
+                                                                                                                        role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <span>Paragraph</span>
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_40"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_40-body">
+                                                                                                            <div id="mceu_9"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_9"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Align left">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-alignleft"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_41"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_41-body">
+                                                                                                            <div id="mceu_10"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_10"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Align center">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-aligncenter"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_42"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_42-body">
+                                                                                                            <div id="mceu_11"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_11"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Align right">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-alignright"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_43"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_43-body">
+                                                                                                            <div id="mceu_12"
+                                                                                                                 class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_12"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Font Family"
+                                                                                                                 aria-haspopup="true">
+                                                                                                                <button id="mceu_12-open"
+                                                                                                                        role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <span>Font Family</span>
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_44"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_44-body">
+                                                                                                            <div id="mceu_13"
+                                                                                                                 class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_13"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Font Sizes"
+                                                                                                                 aria-haspopup="true">
+                                                                                                                <button id="mceu_13-open"
+                                                                                                                        role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <span>Font Sizes</span>
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_45"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_45-body">
+                                                                                                            <div id="mceu_14"
+                                                                                                                 class="mce-widget mce-btn mce-colorbutton mce-first mce-last"
+                                                                                                                 role="button"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-haspopup="true"
+                                                                                                                 aria-label="Text color">
+                                                                                                                <button role="presentation"
+                                                                                                                        hidefocus="1"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-forecolor"></i><span
+                                                                                                                        id="mceu_14-preview"
+                                                                                                                        class="mce-preview"></span>
+                                                                                                                </button>
+                                                                                                                <button type="button"
+                                                                                                                        class="mce-open"
+                                                                                                                        hidefocus="1"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_46"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_46-body">
+                                                                                                            <div id="mceu_15"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_15"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Bullet list">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-bullist"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_47"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_47-body">
+                                                                                                            <div id="mceu_16"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_16"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Numbered list">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-numlist"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_48"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_48-body">
+                                                                                                            <div id="mceu_17"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_17"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Horizontal line">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-hr"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_49"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_49-body">
+                                                                                                            <div id="mceu_18"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_18"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Clear formatting">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-removeformat"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_50"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_50-body">
+                                                                                                            <div id="mceu_19"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_19"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Decrease indent">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-outdent"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_51"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_51-body">
+                                                                                                            <div id="mceu_20"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_20"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Increase indent"
+                                                                                                                 aria-disabled="false">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-indent"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_52"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_52-body">
+                                                                                                            <div id="mceu_21"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_21"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert a spoiler">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-spoiler"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_53"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_53-body">
+                                                                                                            <div id="mceu_22"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_22"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert/edit link">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-link"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_54"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_54-body">
+                                                                                                            <div id="mceu_23"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_23"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Remove link">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-unlink"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_55"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_55-body">
+                                                                                                            <div id="mceu_24"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_24"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert/edit image">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-image"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_56"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_56-body">
+                                                                                                            <div id="mceu_25"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_25"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Embed a Video"
+                                                                                                                 aria-pressed="false">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-videoembed"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_57"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_57-body">
+                                                                                                            <div id="mceu_26"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_26"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert a code block">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-codeBlock"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_58"
+                                                                                                         class="mce-container mce-last mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_58-body">
+                                                                                                            <div id="mceu_27"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_27"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Dice roller">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-none"
+                                                                                                                       style="background-image: url('/Content/1-0-553-0/js/tinymce/custom_plugins/dieroller/img/dice.jpg')"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div id="mceu_59"
+                                                                                         class="mce-edit-area mce-container mce-panel mce-stack-layout-item"
+                                                                                         hidefocus="1" tabindex="-1"
+                                                                                         role="group"
+                                                                                         style="border-width: 1px 0px 0px;">
+                                                                                        <iframe id="field-short-description-wysiwyg_ifr"
+                                                                                                frameborder="0"
+                                                                                                allowtransparency="true"
+                                                                                                title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help"
+                                                                                                src='javascript:""'
+                                                                                                style="width: 100%; height: 250px; display: block;"></iframe>
+                                                                                    </div>
+                                                                                    <div id="mceu_60"
+                                                                                         class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item"
+                                                                                         hidefocus="1" tabindex="-1"
+                                                                                         role="group"
+                                                                                         style="border-width: 1px 0px 0px;">
+                                                                                        <div id="mceu_60-body"
+                                                                                             class="mce-container-body mce-flow-layout">
+                                                                                            <div id="mceu_61"
+                                                                                                 class="mce-path mce-first mce-flow-layout-item">
+                                                                                                <div role="button"
+                                                                                                     class="mce-path-item mce-last"
+                                                                                                     data-index="0"
+                                                                                                     tabindex="-1"
+                                                                                                     id="mceu_61-0"
+                                                                                                     aria-level="0">p
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div id="mceu_62"
+                                                                                                 class="mce-last mce-flow-layout-item mce-resizehandle">
+                                                                                                <i class="mce-ico mce-i-resize"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <textarea name="short-description-wysiwyg"
+                                                                                      id="field-short-description-wysiwyg"
+                                                                                      class="j-wysiwyg-editor text-editor"
+                                                                                      aria-hidden="true"
+                                                                                      style="display: none;"></textarea>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div id="tab-markup"
+                                                                         class="b-tab-contentArea tab-markup"
+                                                                         data-markup-mode="markup"
+                                                                         style="display: none;"
+                                                                         data-markup-name="WysiwygHtml">
+                                                            <textarea name="short-description"
+                                                                      id="field-short-description"
+                                                                      class="j-markup-editor"></textarea>
+                                                                        <select class="p-markup-selector markup-selector j-markup-type-selector"
+                                                                                style="display: none;">
+
+                                                                            <option value="2" data-name="PlainText">
+                                                                                Plain Text
+                                                                            </option>
+
+                                                                            <option value="3" data-name="BBCode">
+                                                                                BBCode
+                                                                            </option>
+
+                                                                            <option selected="selected" value="1"
+                                                                                    data-name="WysiwygHtml">WYSIWYG
+                                                                            </option>
+
+                                                                            <option value="4" data-name="Creole">
+                                                                                Creole
+                                                                            </option>
+
+                                                                            <option value="6" data-name="RawHtml">Raw
+                                                                                Html
+                                                                            </option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                    <span class="field-errors" htmlfor="field-body"
+                                                                          id="field-error-field-body"
+                                                                          style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-description">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip req"
+                                                         title="Enter the full description for your race.">Description
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <div class="b-tab b-tab-b tabbed-container p-markup-editor markup-editor j-content-editor no-view-state"
+                                                             data-is-new-content="true"
+                                                             data-show-markup-selection="false">
+                                                            <ul class="b-tab-nav j-tab-nav tabbed-tabs u-hidden">
+                                                                <li class="b-tab-item selected"
+                                                                    data-markup-mode="editor"
+                                                                    style="display: none;">
+                                                                    <a>Editor</a>
+                                                                </li>
+
+                                                                <li class="b-tab-item" data-markup-mode="markup"
+                                                                    style="display: none;">
+                                                                    <a>Markup</a>
+                                                                </li>
+
+                                                            </ul>
+                                                            <div class="b-tab-content tabbed-content j-tab-content">
+                                                                <input type="hidden"
+                                                                       class="markup-type-field j-markup-type"
+                                                                       name="description-type"
+                                                                       id="field-description-type"
+                                                                       value="1">
+                                                                <div class="b-tab-contentWrapper tabbed-content-wrap">
+
+                                                                    <div id="tab-wysiwyg"
+                                                                         class="b-tab-contentArea tab-wysiwyg"
+                                                                         data-markup-mode="editor" data-markup-type="1"
+                                                                         data-markup-name="wysiwyg"
+                                                                         style="display: block;">
+                                                                        <div class="loading-message-wrapper j-loading-message">
+                                                                            <span class="loading-message">Loading editor...</span>
+                                                                            <div id="mceu_91"
+                                                                                 class="mce-tinymce mce-container mce-panel"
+                                                                                 hidefocus="1" tabindex="-1"
+                                                                                 role="application"
+                                                                                 style="visibility: hidden; border-width: 1px; width: 100%;">
+                                                                                <div id="mceu_91-body"
+                                                                                     class="mce-container-body mce-stack-layout">
+                                                                                    <div id="mceu_92"
+                                                                                         class="mce-toolbar-grp mce-container mce-panel mce-first mce-stack-layout-item"
+                                                                                         hidefocus="1" tabindex="-1"
+                                                                                         role="group">
+                                                                                        <div id="mceu_92-body"
+                                                                                             class="mce-container-body mce-stack-layout">
+                                                                                            <div id="mceu_93"
+                                                                                                 class="mce-container mce-toolbar mce-first mce-last mce-stack-layout-item"
+                                                                                                 role="toolbar">
+                                                                                                <div id="mceu_93-body"
+                                                                                                     class="mce-container-body mce-flow-layout">
+                                                                                                    <div id="mceu_94"
+                                                                                                         class="mce-container mce-first mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_94-body">
+                                                                                                            <div id="mceu_63"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last mce-disabled"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_63"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Undo"
+                                                                                                                 aria-disabled="true">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-undo"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_95"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_95-body">
+                                                                                                            <div id="mceu_64"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_64"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Paste">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-paste"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_96"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_96-body">
+                                                                                                            <div id="mceu_65"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_65"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Bold">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-bold"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_97"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_97-body">
+                                                                                                            <div id="mceu_66"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_66"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Italic">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-italic"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_98"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_98-body">
+                                                                                                            <div id="mceu_67"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_67"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Underline">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-underline"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_99"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_99-body">
+                                                                                                            <div id="mceu_68"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_68"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Strikethrough">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-strikethrough"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_100"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_100-body">
+                                                                                                            <div id="mceu_69"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_69"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Blockquote">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-blockquote"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_101"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_101-body">
+                                                                                                            <div id="mceu_70"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_70"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Source code">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-code"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_102"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_102-body">
+                                                                                                            <div id="mceu_71"
+                                                                                                                 class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_71"
+                                                                                                                 role="button"
+                                                                                                                 aria-haspopup="true">
+                                                                                                                <button id="mceu_71-open"
+                                                                                                                        role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <span>Paragraph</span>
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_103"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_103-body">
+                                                                                                            <div id="mceu_72"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_72"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Align left">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-alignleft"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_104"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_104-body">
+                                                                                                            <div id="mceu_73"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_73"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Align center">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-aligncenter"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_105"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_105-body">
+                                                                                                            <div id="mceu_74"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_74"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Align right">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-alignright"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_106"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_106-body">
+                                                                                                            <div id="mceu_75"
+                                                                                                                 class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_75"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Font Family"
+                                                                                                                 aria-haspopup="true">
+                                                                                                                <button id="mceu_75-open"
+                                                                                                                        role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <span>Font Family</span>
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_107"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_107-body">
+                                                                                                            <div id="mceu_76"
+                                                                                                                 class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_76"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Font Sizes"
+                                                                                                                 aria-haspopup="true">
+                                                                                                                <button id="mceu_76-open"
+                                                                                                                        role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <span>Font Sizes</span>
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_108"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_108-body">
+                                                                                                            <div id="mceu_77"
+                                                                                                                 class="mce-widget mce-btn mce-colorbutton mce-first mce-last"
+                                                                                                                 role="button"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-haspopup="true"
+                                                                                                                 aria-label="Text color">
+                                                                                                                <button role="presentation"
+                                                                                                                        hidefocus="1"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-forecolor"></i><span
+                                                                                                                        id="mceu_77-preview"
+                                                                                                                        class="mce-preview"></span>
+                                                                                                                </button>
+                                                                                                                <button type="button"
+                                                                                                                        class="mce-open"
+                                                                                                                        hidefocus="1"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-caret"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_109"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_109-body">
+                                                                                                            <div id="mceu_78"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_78"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Bullet list">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-bullist"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_110"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_110-body">
+                                                                                                            <div id="mceu_79"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_79"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Numbered list">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-numlist"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_111"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_111-body">
+                                                                                                            <div id="mceu_80"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_80"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Horizontal line">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-hr"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_112"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_112-body">
+                                                                                                            <div id="mceu_81"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_81"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Clear formatting">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-removeformat"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_113"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_113-body">
+                                                                                                            <div id="mceu_82"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_82"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Decrease indent">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-outdent"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_114"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_114-body">
+                                                                                                            <div id="mceu_83"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_83"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Increase indent"
+                                                                                                                 aria-disabled="false">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-indent"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_115"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_115-body">
+                                                                                                            <div id="mceu_84"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_84"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert a spoiler">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-spoiler"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_116"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_116-body">
+                                                                                                            <div id="mceu_85"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_85"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert/edit link">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-link"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_117"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_117-body">
+                                                                                                            <div id="mceu_86"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_86"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Remove link">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-unlink"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_118"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_118-body">
+                                                                                                            <div id="mceu_87"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_87"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert/edit image">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-image"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_119"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_119-body">
+                                                                                                            <div id="mceu_88"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_88"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Embed a Video"
+                                                                                                                 aria-pressed="false">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-videoembed"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_120"
+                                                                                                         class="mce-container mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_120-body">
+                                                                                                            <div id="mceu_89"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_89"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Insert a code block">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-codeBlock"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div id="mceu_121"
+                                                                                                         class="mce-container mce-last mce-flow-layout-item mce-btn-group"
+                                                                                                         role="group">
+                                                                                                        <div id="mceu_121-body">
+                                                                                                            <div id="mceu_90"
+                                                                                                                 class="mce-widget mce-btn mce-first mce-last"
+                                                                                                                 tabindex="-1"
+                                                                                                                 aria-labelledby="mceu_90"
+                                                                                                                 role="button"
+                                                                                                                 aria-label="Dice roller">
+                                                                                                                <button role="presentation"
+                                                                                                                        type="button"
+                                                                                                                        tabindex="-1">
+                                                                                                                    <i class="mce-ico mce-i-none"
+                                                                                                                       style="background-image: url('/Content/1-0-553-0/js/tinymce/custom_plugins/dieroller/img/dice.jpg')"></i>
+                                                                                                                </button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div id="mceu_122"
+                                                                                         class="mce-edit-area mce-container mce-panel mce-stack-layout-item"
+                                                                                         hidefocus="1" tabindex="-1"
+                                                                                         role="group"
+                                                                                         style="border-width: 1px 0px 0px;">
+                                                                                        <iframe id="field-description-wysiwyg_ifr"
+                                                                                                frameborder="0"
+                                                                                                allowtransparency="true"
+                                                                                                title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help"
+                                                                                                src='javascript:""'
+                                                                                                style="width: 100%; height: 250px; display: block;"></iframe>
+                                                                                    </div>
+                                                                                    <div id="mceu_123"
+                                                                                         class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item"
+                                                                                         hidefocus="1" tabindex="-1"
+                                                                                         role="group"
+                                                                                         style="border-width: 1px 0px 0px;">
+                                                                                        <div id="mceu_123-body"
+                                                                                             class="mce-container-body mce-flow-layout">
+                                                                                            <div id="mceu_124"
+                                                                                                 class="mce-path mce-first mce-flow-layout-item">
+                                                                                                <div role="button"
+                                                                                                     class="mce-path-item mce-last"
+                                                                                                     data-index="0"
+                                                                                                     tabindex="-1"
+                                                                                                     id="mceu_124-0"
+                                                                                                     aria-level="0">
+                                                                                                    p
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div id="mceu_125"
+                                                                                                 class="mce-last mce-flow-layout-item mce-resizehandle">
+                                                                                                <i class="mce-ico mce-i-resize"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <textarea name="description-wysiwyg"
+                                                                                      id="field-description-wysiwyg"
+                                                                                      class="j-wysiwyg-editor text-editor"
+                                                                                      data-validation-required="true"
+                                                                                      aria-hidden="true"
+                                                                                      style="display: none;"></textarea>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div id="tab-markup"
+                                                                         class="b-tab-contentArea tab-markup"
+                                                                         data-markup-mode="markup"
+                                                                         style="display: none;"
+                                                                         data-markup-name="WysiwygHtml">
+                                                            <textarea name="description" id="field-description"
+                                                                      class="j-markup-editor"
+                                                                      data-validation-required="true"></textarea>
+                                                                        <select class="p-markup-selector markup-selector j-markup-type-selector"
+                                                                                style="display: none;">
+
+                                                                            <option value="2" data-name="PlainText">
+                                                                                Plain Text
+                                                                            </option>
+
+                                                                            <option value="3" data-name="BBCode">
+                                                                                BBCode
+                                                                            </option>
+
+                                                                            <option selected="selected" value="1"
+                                                                                    data-name="WysiwygHtml">WYSIWYG
+                                                                            </option>
+
+                                                                            <option value="4" data-name="Creole">
+                                                                                Creole
+                                                                            </option>
+
+                                                                            <option value="6" data-name="RawHtml">Raw
+                                                                                Html
+                                                                            </option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                    <span class="field-errors" htmlfor="field-body"
+                                                                          id="field-error-field-body"
+                                                                          style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-racial-trait-introduction">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip req">
+                                                        Racial Trait
+                                                        Introduction
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="text" name="racial-trait-introduction"
+                                                               id="field-racial-trait-introduction" value=""
+                                                               autocomplete="off"
+                                                               size="200" data-validation-required="true"
+                                                               maxlength="1024"
+                                                               data-validation-length="2..1024"
+                                                               data-validation-length-message="Must be within 2 and 1024 characters long.">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-supports-subrace boolean">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip">Will
+                                                        have
+                                                        subraces?
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+                                                        <div class="fc-fake" id="fc-fake-supports-subrace">
+                                                            <div class="fc-fake-item"
+                                                                 data-fc-real-item-id="field-supports-subrace"></div>
+                                                        </div>
+
+                                                        <div class="hide fc-real" id="fc-real-supports-subrace">
+
+                                                            <!-- Field -->
+
+
+                                                            <input type="checkbox" name="supports-subrace"
+                                                                   id="field-supports-subrace" value="y">
+                                                        </div>
+
+                                                        <script>
+                                                            Waterdeep.fancyCheckbox($("#fc-fake-supports-subrace"), $("#fc-real-supports-subrace"));
+                                                        </script>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-large-avatar">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip "
+                                                         title="">Large
+                                                        Avatar
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+                                                        <p style="color: #808080;margin-bottom:5px;">Recommended
+                                                            1000x1000
+                                                            pixels</p>
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="file" name="f25ea81b907aa5c1931a10adf6b99196e"
+                                                               id="field-large-avatar">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="ddb-homebrew-create-form-fields-item ddb-homebrew-create-form-fields-item-avatar">
+                                                    <div class="ddb-homebrew-create-form-fields-item-label tip"
+                                                         title="">Portrait
+                                                        Avatar
+                                                    </div>
+                                                    <div class="ddb-homebrew-create-form-fields-item-input">
+                                                        <p style="color: #808080;margin-bottom:5px;">Recommended 128x128
+                                                            pixels</p>
+
+                                                        <!-- Field -->
+
+
+                                                        <input type="file" name="fb1d2cc6c415de85d35a9bb3520131782"
+                                                               id="field-portait-avatar">
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="line muted height3"></div>
+                                            <div class="ddb-homebrew-create-form-footer">
+                                                <button class="button" type="submit">Create Race</button>
+
+                                                <div class="ddb-homebrew-create-form-footer-text">
+                                                    You will be able to add racial traits and sub races once the race is
+                                                    created.
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </section>
+                        </div>
+                    </div>
+
+
+                    <section class="ad-container ad-container-footer">
+                        <div class="ad-bin">
+
+                        </div>
+                    </section>
+                    <div id="footer-push" style="height: 50px"></div>
+                </div>
+                <div class="region region-footer">
+                    <div id="block-dx1-common-blocks-block-dx1-common-blocks-footer"
+                         class="block block-dx1-common-blocks">
+                        <div class="content">
+                            <footer>
+                                <!-- BACK TO TOP -->
+                                <div id="back-to-top" style="display: block;"><a href="#page">Back
+                                    to top</a></div>
+                                <!-- BACK TO TOP -->
+                                <div class="main-footer">
+                                    <div class="page-width">
+                                        <div class="footer-text">
+                                            <p class="brand-family-title">Wizards brand family:</p>
+                                            <p class="brand-family-menu">
+                                                <a href="https://magic.wizards.com" target="_blank">Magic</a><span
+                                                    class="separator"> | </span><a
+                                                    href="http://dnd.wizards.com"
+                                                    target="_blank">D&amp;D</a><span
+                                                    class="separator"> | </span><a
+                                                    href="http://wpn.wizards.com/"
+                                                    target="_blank">wpn</a>
+                                            <p class="terms">
+                                                <a href="http://company.wizards.com/tou"
+                                                   target="_blank">Terms of
+                                                    Use</a><span
+                                                    class="separator"> | </span><a
+                                                    href="http://company.wizards.com/policies/web/privacy"
+                                                    target="_blank">Privacy
+                                                Policy</a><span class="separator"> | </span><a
+                                                    href="http://company.wizards.com/conduct"
+                                                    target="_blank">Code of
+                                                Conduct</a><span class="separator"> | </span><a
+                                                    href="http://company.wizards.com/policies/web/cookie"
+                                                    target="_blank">Cookies</a><span
+                                                    class="separator"> | </span><a
+                                                    href="http://support.wizards.com/"
+                                                    target="_blank">Customer Service</a></p>
+
+                                        </div>
+                                        <!--menu-footer-sellers-->
+                                        <p class="logo wizard"><a href="http://company.wizards.com"
+                                                                  target="_blank">Wizards
+                                            of
+                                            the Coast</a></p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
